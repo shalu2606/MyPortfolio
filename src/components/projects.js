@@ -24,15 +24,15 @@ function Projects() {
     }
 
 
-    return  <section className="flex flex-col py-20 px-5 justify-center bg-primary text-white" id="projects">
+    return  <section className="flex flex-col py-20 px-5 justify-center bg-primary text-white " id="projects">
         <div className="w-full">
             <div className="flex  flex-col px-10 py-5">
                 <h1 className="text-4xl text-white border-b-4  border-[#2b2d77] mb-5 w-[140px] font-bold ">Projects</h1>
                 <p>These are some of my best projects.I have built these with HTML,CSS,Javascript,React and MongoDB..</p>
             </div>
         </div>
-        <div className="w-full">
-            <div className="flex  flex-col md:flex-row px-10 gap-5">
+        <div className="w-full ">
+            <div className="flex  flex-col md:flex-row px-10 gap-5 ">
                 {config.projects.map((project)=> (
                     <a href={project.link}>
                     <div className="relative">

@@ -6,10 +6,10 @@ function Header()
 
 
 return(
-    <header className="flex justify-between px-5 py-2 bg-secondary sticky top-0">
+    <header className="flex justify-between px-5 py-2 bg-secondary sticky top-0 z-50">
         <a  className="font-bold text-white text-2xl "href="#">Shalini Vijay</a>
-<nav className="hidden md:block ">
 
+        <nav className="hidden md:block ">
         <ul className="flex text-white cursor-pointer">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -20,7 +20,7 @@ return(
         </nav>
         { toggleMenu && <nav className="block md:hidden">
 
-        <ul  onClick={()=>setToggleMenu(!toggleMenu)}  className="flex flex-col text-white mobile-nav ">
+        <ul onClick={()=>setToggleMenu(!toggleMenu)}  className="flex flex-col text-white mobile-nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Project</a></li>
